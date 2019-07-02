@@ -12,15 +12,28 @@
         text-align: center;
       }
 
+      .right-align {
+        text-align: right;
+      }
+
+      .justify-align {
+        text-align: justify;
+      }
+
       h1 {
         font-family: Lobster, Monospace;
         margin-left: 265px;
       }
 
       h2 {
-        font-family: Lobster, monospace;
+        font-family: Lobster, Monospace;
         font-size: 40px;
       }
+
+      .bold {
+        font-weight: bold;
+      }
+
       p {
         font-size: 16px;
         font-family: Monospace;
@@ -30,52 +43,64 @@
         width: 100px;
       }
 
-      body  {
+      body {
         margin: 0;
         background: lightblue url("img_tree.gif") no-repeat fixed center;
       }
 
-    ul.topnav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
+      ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
 
-    ul.topnav li {float: left;}
+      ul.topnav li {
+        float: left;
+      }
 
-    ul.topnav li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+      ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-    ul.topnav li a:hover:not(.active) {background-color: #111;}
+      ul.topnav li a:hover:not(.active) {
+        background-color: #111;
+      }
 
-    ul.topnav li a.active {background-color: #4CAF50;}
+      ul.topnav li a.active {
+        background-color: #4CAF50;
+      }
 
-    ul.topnav li.right {float: right;}
+      ul.topnav li.right {
+        float: right;
+      }
 
-    @media screen and (max-width: 600px) {
-      ul.topnav li.right,
-      ul.topnav li {float: none;}
-    }
+      @media screen and (max-width: 600px) {
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      position: -webkit-sticky; /* Safari */
-      position: sticky;
-      top: 0;
-    }
+        ul.topnav li.right,
+        ul.topnav li {
+          float: none;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+      }
     </style>
-    
+
     <div class="body">
-        {{outlet}}
-      </div>
+      {{outlet}}
+    </div>
